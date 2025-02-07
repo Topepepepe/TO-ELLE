@@ -3,7 +3,7 @@
 // Function to handle button click events
 function selectOption(option) {
     if (option === 'yes') {
-        flashRainbowColors(function() {
+        flashMaroonColor(function () {
             document.getElementById('question').style.display = 'none';
             displayCatHeart();
         });
@@ -18,17 +18,15 @@ function selectOption(option) {
     }
 }
 
-// Function to flash rainbow colors and then execute a callback function
-function flashRainbowColors(callback) {
-    var colors = ['#800000'];
-    var i = 0;
-    var interval = setInterval(function() {
-        document.body.style.backgroundColor = colors[i];
-        i = (i + 1) % colors.length;
+// Function to flash maroon color and then execute a callback function
+function flashMaroonColor(callback) {
+    var maroon = '#800000';
+    var interval = setInterval(function () {
+        document.body.style.backgroundColor = maroon;
     }, 200);
-    setTimeout(function() {
+    setTimeout(function () {
         clearInterval(interval);
-        document.body.style.backgroundColor = '#800000'; // Reset background color to maroon
+        document.body.style.backgroundColor = maroon; // Keep the background maroon
         if (callback) {
             callback();
         }
@@ -41,7 +39,7 @@ function displayCat() {
     var catImage = new Image();
     catImage.src = 'cat.gif';
     catImage.alt = 'Cat';
-    catImage.onload = function() {
+    catImage.onload = function () {
         imageContainer.appendChild(catImage);
     };
 }
@@ -53,7 +51,7 @@ function displayCatHeart() {
     var catHeartImage = new Image();
     catHeartImage.src = 'cat-heart.gif';
     catHeartImage.alt = 'Cat Heart';
-    catHeartImage.onload = function() {
+    catHeartImage.onload = function () {
         imageContainer.appendChild(catHeartImage);
         document.getElementById('options').style.display = 'none';
     };
