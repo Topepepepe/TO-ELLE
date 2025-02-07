@@ -1,7 +1,7 @@
 /* style.css */
 
 body {
-    font-family: 'Times New Roman', serif; /* Change font family to Times New Roman */
+    font-family: "Times New Roman", serif; /* Use Times New Roman font */
     text-align: center; /* Center-align text */
     margin: 0; /* Remove default margin */
     background-color: #800000; /* Set background color to maroon */
@@ -20,7 +20,7 @@ body {
 }
 
 #question {
-    font-family: 'Times New Roman', serif; /* Apply Times New Roman font to the question */
+    font-family: "Times New Roman", serif; /* Apply Times New Roman font to the question */
     font-size: 52px; /* Set font size for the question */
 }
 
@@ -32,8 +32,8 @@ button {
     padding: 10px 20px; /* Set padding for buttons */
     margin: 0 10px; /* Set margin around buttons */
     font-size: 26px; /* Set font size for buttons */
-    font-family: 'Times New Roman', serif; /* Apply Times New Roman font to the options */
-    background-color: #FB607F; /* Set button background color */
+    font-family: "Times New Roman", serif; /* Apply Times New Roman font to the options */
+    background-color: #800000; /* Set button background color to maroon */
     color: white; /* Set text color to white */
     border: none; /* Remove button border */
     cursor: pointer; /* Set cursor to pointer on hover */
